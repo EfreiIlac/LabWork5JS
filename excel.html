@@ -1,17 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- I chosed to link the js file here because it's more clean, to avoid the problems discussed in class, 
       I use the "defer" attribute in the script HTML tag, 
       this attribute make sure that the script launch only after all the DOM is charged   -->
-    <script src="index.js" defer></script>
-    <link rel="stylesheet" href="./css/styles.css">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+    <script src="./js/main.js" defer></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Full Review-Pierre-Marie Herrburger--Pietri</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Excel Functions</h1>
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./excel.html">Excel</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <form id="main-form" name="mainform">
+          <label for="numbers">Enter your numbers separated by spaces :</label>
+          <input type="text" id="numbers" name="numbers" />
+          <div class="operations-container">
+            <input type="radio" name="operation" id="sum" value="sum" checked>
+            <label for="sum">AutoSum</label>
+            <input type="radio" name="operation" id="average" value="average">
+            <label for="average">Average</label>
+            <!-- AutoSum -->
+            <input type="radio" name="operation" id="max" value="max">
+            <label for="max">Max</label>
+            <input type="radio" name="operation" id="min" value="min">
+            <label for="min">Min</label>
+          </div>
+          <input id="submit-calculation" type="submit" value="Calculate" />
+        </form>
+        <div id="output">
+          Result: <span id="result"></span>
+        </div>
+        <footer>
+          <p>
+            ILAC & EFREI Partnership- HTML, CSS, and JavaScript Main Lab-work -
+            Pierre-Marie Herrburger--Pietri
+          </p>
+        </footer>
+      </main>
+    </div>
+  </body>
 </html>
+
