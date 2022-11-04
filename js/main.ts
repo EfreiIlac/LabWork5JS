@@ -43,6 +43,7 @@ function calculate(e:Event) {
   const numbers = document.getElementById("numbers") as HTMLInputElement;
   // we will not do as says in the assignment, we don't want to have a lot of code in an els method, we will just return if the input is empty
   if (numbers.value === "") {
+    alert("Please enter some numbers");
     return;
   }
   // Now as we can see, it's much easier to read and understand
