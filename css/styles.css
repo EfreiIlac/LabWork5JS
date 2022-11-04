@@ -1,10 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  background-color: aquamarine;
+  color: #291528;
+  background-color: #114b5f;
 }
 
 .container {
@@ -12,14 +15,15 @@ body {
   margin: 0 auto;
   background-color: #fff;
   min-height: 100vh;
-  padding: 20px;
+  background-color: #7dde92;
 }
 .container header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
   padding: 20px;
+  background-color: #291528;
+  color: #fff;
 }
 .container header nav {
   width: 200px;
@@ -31,6 +35,90 @@ body {
 }
 .container header nav ul li {
   padding: 0 10px;
+}
+.container header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+.container header nav ul li a:hover {
+  color: #7dde92;
+}
+.container header nav ul li a:hover::before {
+  width: 100%;
+}
+.container header nav ul li a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  top: 0;
+  width: 0;
+  border-bottom: 1px solid #7dde92;
+  border-top: 1px solid #7dde92;
+  transition: width 0.3s;
+}
+.container main {
+  padding: 20px;
+}
+.container main form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #114b5f;
+  border-radius: 12px;
+  background-color: #2ebfa5;
+  margin-bottom: 20px;
+}
+.container main form input {
+  padding: 2px 10px;
+  margin-bottom: 10px;
+  border: 1px solid #114b5f;
+  border-radius: 5px;
+}
+.container main form input[type=submit] {
+  background-color: #114b5f;
+  color: #fff;
+  border: none;
+  margin: 0;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+.container main form input[type=submit]:hover {
+  background-color: #176782;
+}
+.container main form input[type=reset] {
+  background-color: #176782;
+  color: #fff;
+  border: none;
+  margin: 0;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+.container main form input[type=reset]:hover {
+  background-color: #1b7898;
+}
+.container main #output {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #114b5f;
+  border-radius: 12px;
+  background-color: #2ebfa5;
+}
+
+footer {
+  width: 65%;
+  margin: 0 auto;
+  margin-top: -30px;
+  height: 0px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
